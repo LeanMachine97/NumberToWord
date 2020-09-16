@@ -69,7 +69,7 @@ public class NumberToWordTest {
 	public void testConvertNumberToWord(long number, String expected) {
 		NumberToWord converter = new NumberToWord();
 		String actual = converter.convertNumberToWord(number);
-		assertEquals("fails", expected, actual);
+		assertEquals(expected, actual);
 	}
 	
 	//test method for invalid input for convertNumberToWord function
