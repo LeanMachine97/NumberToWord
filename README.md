@@ -1,9 +1,13 @@
 # NumberToWord
 A function written in Java to convert a numerical input value to its word equivalent.
 
-NumberToWord.class contains the function
+In src/main/java/numbertoword:
 
-NumberToWordTest.class contains the unit test for the function
+NumberToWord.class - contains the function
+
+In src/test/java/numbertoword:
+
+NumberToWordTest.class - contains the unit test for the function
 
 Required Java libraries:
 1. any JDK
