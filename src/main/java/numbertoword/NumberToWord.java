@@ -15,10 +15,10 @@ public class NumberToWord {
 			else if (number == 0)
 				words = "zero";
 			else {
-				while (number!=0) {
-					long n1 = number%1000;
-					int n2 = (int) (n1%100);
-					int n3 = (int) (n1/100);
+				while (number != 0) {
+					long n1 = number % 1000;
+					int n2 = (int) (n1 % 100);
+					int n3 = (int) (n1 / 100);
 					
 					if (n1 > 0) { //determine thousands
 						if (words.length() != 0)
@@ -30,7 +30,7 @@ public class NumberToWord {
 						else if (n2 >= 0) { //determine number in the thousand
 							if (n2 < 20)
 								words = numbers[n2] + " " + words;
-							else if (n2%10 == 0)
+							else if (n2 % 10 == 0)
 								words = tens[n2/10] + " " + words;
 							else
 								words = tens[n2/10] + "-" + numbers[n2%10] + " " + words;
@@ -39,7 +39,7 @@ public class NumberToWord {
 						}
 					}
 					thousandMultiplier++;
-					number = number/1000; //next thousand
+					number = number / 1000; //next thousand
 				}
 			}
 			
